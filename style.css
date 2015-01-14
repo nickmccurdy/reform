@@ -1,0 +1,44 @@
+body {
+  background: #eee;
+  color: #444;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+}
+
+.title {
+  color: #000;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+input, .result {
+  color: #000;
+  font-weight: bold;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #0074d9;
+  text-align: center;
+  width: 75px;
+}
+
+.hr-flow {
+  padding: 0;
+  border: none;
+  border-top: 1px solid #000;
+  color: #000;
+  text-align: center;
+}
+.hr-flow:after {
+  background: #eee;
+  content: "↓";
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  position: relative;
+  top: -0.7em;
+}

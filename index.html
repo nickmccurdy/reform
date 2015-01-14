@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="ReForm" ng-controller="FormController">
+  <head>
+    <meta charset="utf-8">
+    <title>ReForm</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="title">ReForm</h1>
+    <p>
+      I have a bill of
+      $<input type="number" ng-model="amount" autofocus></input>
+      that I want to split between
+      <input type="number" ng-model="people"></input>
+      people with a tip of
+      <input type="number" ng-model="tip"></input>%.
+    </p>
+    <hr class="hr-flow">
+    <p>
+      Each person should tip
+      $<span class="result" ng-bind="getTip(amount / people, tip) || 0"></span>,
+      for a total of
+      $<span class="result" ng-bind="amount / people + getTip(amount / people, tip) || 0"></span>
+      per person.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
