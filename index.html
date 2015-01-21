@@ -21,9 +21,9 @@
     <span class="fa fa-chevron-down flow-icon"></span>
     <p class="card">
       Each person should tip
-      $<span class="result" ng-bind="getTip(amount / people, tip) || 0"></span>,
+      $<span class="result" ng-bind="(getTip(amount / people, tip) || 0) | currency : ''"></span>,
       for a total of
-      $<span class="result" ng-bind="amount / people + getTip(amount / people, tip) || 0"></span>
+      $<span class="result" ng-bind="(amount / people + getTip(amount / people, tip) || 0) | currency : ''"></span>
       per person.
     </p>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
