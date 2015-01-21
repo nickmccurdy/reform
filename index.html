@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1 class="title">ReForm</h1>
-    <p>
+    <p class="card">
       I have a bill of
       $<input type="number" ng-model="amount" autofocus></input>
       that I want to split between
@@ -16,8 +16,8 @@
       people with a tip of
       <input type="number" ng-model="tip"></input>%.
     </p>
-    <hr class="hr-flow">
-    <p>
+    <div class="flow-icon">↓</div>
+    <p class="card">
       Each person should tip
       $<span class="result" ng-bind="getTip(amount / people, tip) || 0"></span>,
       for a total of
