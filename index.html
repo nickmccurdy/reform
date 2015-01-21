@@ -12,11 +12,11 @@
     <h1 class="title">ReForm</h1>
     <p class="card">
       I have a bill of
-      $<input type="number" ng-model="amount" autofocus></input>
+      $<input type="number" min="0" step="0.01" ng-model="amount" required autofocus></input>
       that I want to split between
-      <input type="number" ng-model="people"></input>
+      <input type="number" min="1" step="1" ng-model="people" required></input>
       people with a tip of
-      <input type="number" ng-model="tip"></input>%.
+      <input type="number" min="0" step="1" max="100" ng-model="tip" required></input>%.
     </p>
     <span class="fa fa-chevron-down flow-icon"></span>
     <p class="card">
