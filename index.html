@@ -5,6 +5,7 @@
     <title>ReForm</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,7 +18,7 @@
       people with a tip of
       <input type="number" ng-model="tip"></input>%.
     </p>
-    <div class="flow-icon">↓</div>
+    <span class="fa fa-chevron-down flow-icon"></span>
     <p class="card">
       Each person should tip
       $<span class="result" ng-bind="getTip(amount / people, tip) || 0"></span>,
