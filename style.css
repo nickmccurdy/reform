@@ -34,7 +34,7 @@ input {
 }
 
 .flow-icon, .card {
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .flow-icon {
