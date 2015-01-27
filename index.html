@@ -11,16 +11,16 @@
   <body>
     <h1 class="title">ReForm</h1>
     <p class="subtitle">An experimental UI for live calculations.</p>
-    <p class="card">
+    <form name="inputForm" class="card" role="form">
       I have a bill of
       $<input type="number" min="0" step="0.01" ng-model="amount" required autofocus></input>
       that I want to split between
       <input type="number" min="1" step="1" ng-model="people" required></input>
       people with a tip of
       <input type="number" min="0" step="1" max="100" ng-model="tip" required></input>%.
-    </p>
-    <span class="fa fa-chevron-down flow-icon"></span>
-    <p class="card">
+    </form>
+    <span class="fa fa-chevron-down flow-icon" ng-class="{ dimmed: !inputForm.$valid }"></span>
+    <p class="card" ng-class="{ dimmed: !inputForm.$valid }">
       Each person should tip
       $<span class="result" ng-bind="(getTip(amount / people, tip) || 0) | currency : ''"></span>,
       for a total of

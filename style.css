@@ -33,6 +33,10 @@ input {
   width: 75px;
 }
 
+.flow-icon, .card {
+  transition: 0.5s;
+}
+
 .flow-icon {
   color: #000;
 }
@@ -44,4 +48,8 @@ input {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
+}
+
+.dimmed {
+  opacity: 0.5;
 }
