@@ -1,2 +1,2 @@
-# [ReForm](https://nicolasmccurdy.com/reform/)
+# [ReForm](https://nickmccurdy.com/reform/)
 An experimental UI for live calculations.
